@@ -11,10 +11,8 @@ def test_update_address(page):
     address_line_1_update = "a_updated"
     address_line_2_update = "b_updated"
 
-    # Go to home page
-    page.goto("https://e.lsi2.hr.dmerej.info/add_employee")
-
     # Create an employee
+    page.goto("https://e.lsi2.hr.dmerej.info/add_employee")
     page.locator('input[name="name"]').fill("a")
     page.locator('input[name="email"]').fill("a@b.fr")
     page.locator('input[name="address_line1"]').fill(address_line_1)
