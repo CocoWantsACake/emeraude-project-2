@@ -1,14 +1,11 @@
 import time
 
+import pytest
+from py_fixtures import reset_db
 from playwright.sync_api import expect
 
 
 def test_update_address(page):
-    # Make sure db is empty
-    page.goto("/reset_db")
-    proceed_button = page.locator("button:has-text('proceed')")
-    proceed_button.click()
-
     address_line_1 = "a"
     address_line_2 = "b"
     address_line_1_update = "a_updated"
