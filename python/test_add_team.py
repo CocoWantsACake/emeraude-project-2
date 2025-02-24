@@ -1,5 +1,3 @@
-from py_fixtures import reset_db
-
 def test_create_team(page):
     # Create a team
     page.goto("/")

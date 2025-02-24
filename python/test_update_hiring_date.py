@@ -1,7 +1,6 @@
 import time
 
 import pytest
-from py_fixtures import reset_db
 from playwright.sync_api import expect
 
 
